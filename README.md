@@ -1,5 +1,5 @@
 # docker-libvips
 
-Base: ubuntu:14.04  
+Base: phusion/baseimage
 Installs: libvips (image processing)  
 Dockerfile: imdsm/libvips  

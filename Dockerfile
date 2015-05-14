@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM phusion/baseimage
 MAINTAINER Adam K Dean <adamkdean@googlemail.com>
 
 # Install dependencies
@@ -7,7 +7,6 @@ RUN \
   DEBIAN_FRONTEND=noninteractive apt-get install -y \
   automake build-essential curl \
   gobject-introspection gtk-doc-tools libglib2.0-dev libjpeg-turbo8-dev libpng12-dev libwebp-dev libtiff5-dev libexif-dev libxml2-dev swig libmagickwand-dev
-
 
 # Build libvips
 WORKDIR /tmp
